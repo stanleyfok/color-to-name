@@ -1,6 +1,9 @@
 Color To Name
 =======
 
+[![Build Status](https://travis-ci.org/stanleyfok/color-to-name.png?branch=master)](https://travis-ci.org/stanleyfok/color-to-name)
+[![NPM version](https://img.shields.io/npm/v/color-to-name.svg)](https://www.npmjs.com/package/color-to-name)
+
 A command line tool which helps to map a hex color code to a color name, based on [Zeplin's color palette dataset](https://github.com/zeplin/zeplin-palette)
 
 <img src="https://raw.githubusercontent.com/stanleyfok/color-to-name/master/imgs/highlight.png"/>
