@@ -20,7 +20,7 @@ npm install color-to-name
 color-to-name -c '#3B5897'
 ```
 
-<img src="https://raw.githubusercontent.com/stanleyfok/color-to-name/master/imgs/usage.png" width="600" />
+<img src="https://raw.githubusercontent.com/stanleyfok/color-to-name/master/imgs/usage.png"/>
 
 ### API
 
