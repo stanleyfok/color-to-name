@@ -56,3 +56,7 @@ find the closest color to the input color hex code based on Zeplin's color palet
 ```
 ColorHelper.findClosestColor('#123456'); // return { color: '#1f3b4d', name: 'dark blue grey' }
 ```
+
+## To do
+
+* support more parameters like darken, lighten, hsl, etc
