@@ -1,14 +1,19 @@
 Color To Name
 =======
 
-This is a command line tool which helps to map a hex color code to a color name, based on [Zeplin's color palette dataset](https://github.com/zeplin/zeplin-palette)
+A command line tool which helps to map a hex color code to a color name, based on [Zeplin's color palette dataset](https://github.com/zeplin/zeplin-palette)
+
+<img src="https://raw.githubusercontent.com/stanleyfok/color-to-name/master/imgs/highlight.png"/>
 
 ## Installation
-```
-# as cmdline
-npm install -g color-to-name
 
-# as project dependency
+As command line:
+```
+npm install -g color-to-name
+```
+
+As project dependency:
+```
 npm install color-to-name
 ```
 
