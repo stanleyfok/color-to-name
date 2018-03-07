@@ -38,7 +38,7 @@ color-to-name -c '#3B5897'
 
 You can import the library as your project dependency
 
-```
+```js
 const ColorHelper = require('color-to-name');
 ```
 
@@ -46,7 +46,7 @@ const ColorHelper = require('color-to-name');
 
 Check if a color hex code is valid
 
-```
+```js
 ColorHelper.isValidHexCode('#000000');
 // return true
 
@@ -58,7 +58,7 @@ ColorHelper.isValidHexCode('#qwerty');
 
 Convert a color hex code to RGB values
 
-```
+```js
 ColorHelper.hexToRGB('#123456');
 // return { r: 18, g: 52, b: 86 }
 ```
@@ -67,7 +67,7 @@ ColorHelper.hexToRGB('#123456');
 
 find the closest color to the input color hex code based on Zeplin's color palette dataset
 
-```
+```js
 ColorHelper.findClosestColor('#123456');
 // return { color: '#1f3b4d', name: 'dark blue grey' }
 ```
