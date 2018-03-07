@@ -45,8 +45,11 @@ const ColorHelper = require('color-to-name');
 Check if a color hex code is valid
 
 ```
-ColorHelper.isValidHexCode('#000000'); // return true
-ColorHelper.isValidHexCode('#qwerty'); // return false
+ColorHelper.isValidHexCode('#000000');
+// return true
+
+ColorHelper.isValidHexCode('#qwerty');
+// return false
 ```
 
 #### hexToRGB(color)
@@ -54,7 +57,8 @@ ColorHelper.isValidHexCode('#qwerty'); // return false
 Convert a color hex code to RGB values
 
 ```
-ColorHelper.hexToRGB('#123456'); // return { r: 18, g: 52, b: 86 }
+ColorHelper.hexToRGB('#123456');
+// return { r: 18, g: 52, b: 86 }
 ```
 
 #### findClosestColor(color)
@@ -62,7 +66,8 @@ ColorHelper.hexToRGB('#123456'); // return { r: 18, g: 52, b: 86 }
 find the closest color to the input color hex code based on Zeplin's color palette dataset
 
 ```
-ColorHelper.findClosestColor('#123456'); // return { color: '#1f3b4d', name: 'dark blue grey' }
+ColorHelper.findClosestColor('#123456');
+// return { color: '#1f3b4d', name: 'dark blue grey' }
 ```
 
 ## To do
