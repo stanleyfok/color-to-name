@@ -1,6 +1,6 @@
 {
   "name": "color-to-name",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Find the closest color and name based on zeplin's color palette",
   "homepage": "https://github.com/stanleyfok/color-to-name",
   "main": "lib/ColorHelper.js",
