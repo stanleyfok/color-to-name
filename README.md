@@ -30,7 +30,7 @@ color-to-name -c '#3B5897'
 
 <img src="https://raw.githubusercontent.com/stanleyfok/color-to-name/master/imgs/usage.png"/>
 
-Please note that the color preview may not be as accurate as the real color. It depends if your terminal support 24-bit true color. Please refer to: https://github.com/chalk/chalk#256-and-truecolor-color-support
+Please note that the color preview may not be as accurate as the real color. It depends if your terminal supports 24-bit true color. Please refer to: https://github.com/chalk/chalk#256-and-truecolor-color-support
 
 ### API
 
