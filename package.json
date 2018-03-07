@@ -1,0 +1,36 @@
+{
+  "name": "color-to-name",
+  "version": "1.0.0",
+  "description": "Find the closest color and name based on zeplin's color palette",
+  "homepage": "https://github.com/stanleyfok/color-to-name",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/stanleyfok/color-to-name.git"
+  },
+  "scripts": {
+    "eslint": "./node_modules/.bin/eslint '**/*.js'",
+    "eslint-fix": "./node_modules/.bin/eslint --fix '**/*.js'",
+    "test": "./node_modules/.bin/mocha test/**/*.js"
+  },
+  "keywords": [
+    "color",
+    "name",
+    "map",
+    "rgb",
+    "hex"
+  ],
+  "author": "Stanley Fok <stanleyfok@gmail.com> (https://github.com/stanleyfok)",
+  "license": "MIT",
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "eslint": "^4.18.2",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-plugin-import": "^2.9.0",
+    "mocha": "^5.0.3"
+  },
+  "dependencies": {
+    "chalk": "^2.3.2",
+    "commander": "^2.14.1"
+  }
+}
