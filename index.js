@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 const program = require('commander');
 const chalk = require('chalk');
 
@@ -21,7 +23,7 @@ const { name, color: closestColor } = ColorHelper.findClosestColor(color);
 const { r: outR, g: outG, b: outB } = ColorHelper.hexToRGB(closestColor);
 
 // print input color
-console.log(`Input Color\t-> ${color} (RGB: ${inR}, ${inG}, ${inB}) ${chalk.rgb(inR, inG, inB).inverse('   ')}`);
+console.log(`Input Color\t-> HEX: ${color}, RGB: { ${inR}, ${inG}, ${inB} }, Preview: ${chalk.hex(color).inverse('   ')}`);
 
-console.log(`Closest Color\t-> ${closestColor} (RGB: ${outR}, ${outG}, ${outB}) ${chalk.rgb(outR, outG, outB).inverse('   ')}`);
+console.log(`Closest Color\t-> HEX: ${closestColor}, RGB: { ${outR}, ${outG}, ${outB} }, Preview: ${chalk.hex(closestColor).inverse('   ')}`);
 console.log(`Color Name\t-> ${name}`);
