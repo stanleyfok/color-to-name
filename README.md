@@ -8,6 +8,10 @@ A command line tool which helps to map a hex color code to a color name, based o
 
 <img src="https://raw.githubusercontent.com/stanleyfok/color-to-name/master/imgs/highlight.png"/>
 
+Please note that the color preview may not be as accurate as the real color. It depends if your terminal supports 24-bit true color. Please refer to: https://github.com/chalk/chalk#256-and-truecolor-color-support
+
+For mac OS, [iTerm 3.0+](https://www.iterm2.com/version3.html) supports true color by default
+
 ## Installation
 
 As command line:
@@ -29,8 +33,6 @@ color-to-name -c '#3B5897'
 ```
 
 <img src="https://raw.githubusercontent.com/stanleyfok/color-to-name/master/imgs/usage.png"/>
-
-Please note that the color preview may not be as accurate as the real color. It depends if your terminal supports 24-bit true color. Please refer to: https://github.com/chalk/chalk#256-and-truecolor-color-support
 
 ### API
 
