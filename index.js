@@ -10,7 +10,7 @@ function printColor(label, color) {
   const { r, g, b } = ColorHelper.hexToRGB(color);
 
   console.log(`${fixedWidthString(label, 20)} -> ` +
-    `HEX: ${color} ` +
+    `HEX: ${color}, ` +
     `RGB: ${fixedWidthString(`{ ${r}, ${g}, ${b} }`, 17)}, ` +
     `Preview: ${chalk.hex(color).inverse('   ')}`);
 }
