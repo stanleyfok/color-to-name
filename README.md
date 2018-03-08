@@ -29,7 +29,18 @@ npm install color-to-name
 ### Command line
 
 ```
-color-to-name -c '#3B5897'
+color-to-name --helps
+
+  Usage: index [options]
+
+
+  Options:
+
+    -V, --version        output the version number
+    -a, --all            Print all Zeplin palette colors
+
+    -c, --color [color]  The hex color code
+    -h, --help           output usage information
 ```
 
 <img src="https://raw.githubusercontent.com/stanleyfok/color-to-name/master/imgs/usage.png"/>
@@ -61,6 +72,20 @@ Convert a color hex code to RGB values
 ```js
 ColorHelper.hexToRGB('#123456');
 // return { r: 18, g: 52, b: 86 }
+```
+
+#### getAllColors()
+
+Return the full Zeplin color palette
+```js
+ColorHelper.getAllColors();
+// return {
+//   "#000000": "black",
+//   "#000133": "very dark blue",
+//   .
+//   .
+//   .
+// }
 ```
 
 #### findClosestColor(color)

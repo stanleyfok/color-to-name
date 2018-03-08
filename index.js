@@ -2,28 +2,49 @@
 
 const program = require('commander');
 const chalk = require('chalk');
+const fixedWidthString = require('fixed-width-string');
 
 const ColorHelper = require('./lib/ColorHelper');
 
-program
-  .version('1.0.0')
-  .option('-c, --color [color]', 'The hex color code')
-  .parse(process.argv);
+function printColor(label, color) {
+  const { r, g, b } = ColorHelper.hexToRGB(color);
 
-const color = program.color.toLowerCase();
-
-if (!ColorHelper.isValidHexCode(color)) {
-  console.log('Invalid color code');
-
-  process.exit();
+  console.log(`${fixedWidthString(label, 20)} -> ` +
+    `HEX: ${color} ` +
+    `RGB: ${fixedWidthString(`{ ${r}, ${g}, ${b} }`, 17)}, ` +
+    `Preview: ${chalk.hex(color).inverse('   ')}`);
 }
 
-const { r: inR, g: inG, b: inB } = ColorHelper.hexToRGB(color);
-const { name, color: closestColor } = ColorHelper.findClosestColor(color);
-const { r: outR, g: outG, b: outB } = ColorHelper.hexToRGB(closestColor);
+function main() {
+  program
+    .version('1.0.0')
+    .option('-a, --all', 'Print all Zeplin palette colors')
+    .option('-c, --color [color]', 'The hex color code')
+    .parse(process.argv);
 
-// print input color
-console.log(`Input Color\t-> HEX: ${color}, RGB: { ${inR}, ${inG}, ${inB} }, Preview: ${chalk.hex(color).inverse('   ')}`);
+  if (program.all) {
+    const colors = ColorHelper.getAllColors();
 
-console.log(`Closest Color\t-> HEX: ${closestColor}, RGB: { ${outR}, ${outG}, ${outB} }, Preview: ${chalk.hex(closestColor).inverse('   ')}`);
-console.log(`Color Name\t-> ${name}`);
+    Object.keys(colors).forEach((color) => {
+      printColor(colors[color], color);
+    });
+  } else if (program.color) {
+    const color = program.color.toLowerCase();
+
+    if (!ColorHelper.isValidHexCode(color)) {
+      console.log('Invalid color code');
+
+      process.exit();
+    }
+
+    const { name, color: closestColor } = ColorHelper.findClosestColor(color);
+
+    // print input color
+    printColor('Input Color', color);
+    printColor('Closest Color', closestColor);
+
+    console.log(`${fixedWidthString('Color Name', 20)} -> ${name}`);
+  }
+}
+
+main();
