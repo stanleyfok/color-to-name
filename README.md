@@ -29,7 +29,7 @@ npm install color-to-name
 ### Command line
 
 ```
-color-to-name --helps
+color-to-name --help
 
   Usage: index [options]
 
@@ -39,11 +39,9 @@ color-to-name --helps
     -V, --version        output the version number
     -a, --all            Print all Zeplin palette colors
 
-    -c, --color [color]  The hex color code
+    -c, --color [color]  The hex color code, e.g. '#fdb82a'
     -h, --help           output usage information
 ```
-
-<img src="https://raw.githubusercontent.com/stanleyfok/color-to-name/master/imgs/usage.png"/>
 
 ### API
 
