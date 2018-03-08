@@ -1,6 +1,6 @@
 {
   "name": "color-to-name",
-  "version": "1.0.12",
+  "version": "1.0.14",
   "description": "A command line tool which helps to map a hex color code to a color name, based on Zeplin's color palette dataset",
   "homepage": "https://github.com/stanleyfok/color-to-name",
   "main": "lib/ColorHelper.js",

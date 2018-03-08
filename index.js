@@ -11,15 +11,15 @@ function printColor(label, color) {
 
   console.log(`${fixedWidthString(label, 20)} -> ` +
     `HEX: ${color}, ` +
-    `RGB: { ${fixedWidthString(r, 3)}, ${fixedWidthString(g, 3)}, ${fixedWidthString(b, 3)} }, ` +
+    `RGB: { ${fixedWidthString(r, 3, { align: 'right' })}, ${fixedWidthString(g, 3, { align: 'right' })}, ${fixedWidthString(b, 3, { align: 'right' })} }, ` +
     `Preview: ${chalk.hex(color).inverse('   ')}`);
 }
 
 function main() {
   program
     .version('1.0.0')
-    .option('-a, --all', 'Print all Zeplin palette colors')
-    .option('-c, --color [color]', 'The hex color code')
+    .option('-a, --all', 'print all Zeplin palette colors')
+    .option('-c, --color [color]', 'find the closest color of the input color')
     .parse(process.argv);
 
   if (program.all) {
