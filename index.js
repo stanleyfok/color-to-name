@@ -11,7 +11,7 @@ function printColor(label, color) {
 
   console.log(`${fixedWidthString(label, 20)} -> ` +
     `HEX: ${color}, ` +
-    `RGB: ${fixedWidthString(`{ ${r}, ${g}, ${b} }`, 17)}, ` +
+    `RGB: { ${fixedWidthString(r, 3)}, ${fixedWidthString(g, 3)}, ${fixedWidthString(b, 3)} }, ` +
     `Preview: ${chalk.hex(color).inverse('   ')}`);
 }
 
