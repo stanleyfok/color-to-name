@@ -29,18 +29,32 @@ npm install color-to-name
 ### Command line
 
 ```
-color-to-name --help
+$ color-to-name --help
 
-  Usage: index [options]
+  Usage: color-to-name [options]
 
 
   Options:
 
     -V, --version        output the version number
     -a, --all            Print all Zeplin palette colors
-
-    -c, --color [color]  The hex color code, e.g. '#fdb82a'
+    -c, --color [color]  The hex color code
     -h, --help           output usage information
+$ 
+$ color-to-name -c '#EE4055'
+Input Color          -> HEX: #ee4055, RGB: { 238,  64,  85 }, Preview:
+Closest Color        -> HEX: #fd4659, RGB: { 253,  70,  89 }, Preview:
+Color Name           -> watermelon
+$
+$ color-to-name -c '#3BAA33'
+Input Color          -> HEX: #3baa33, RGB: {  59, 170,  51 }, Preview:
+Closest Color        -> HEX: #39ad48, RGB: {  57, 173,  72 }, Preview:
+Color Name           -> medium green
+$
+$ color-to-name -c '#FDB82A'
+Input Color          -> HEX: #fdb82a, RGB: { 253, 184,  42 }, Preview:
+Closest Color        -> HEX: #ffa62b, RGB: { 255, 166,  43 }, Preview:
+Color Name           -> mango
 ```
 
 ### API
